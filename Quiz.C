@@ -1029,11 +1029,11 @@ enuid :
 		if (c!='\r' && c!='\b' && c!='\t' && c!='\0' && c!='\a') {
 			password[i] = c;
 			i++;
-			/* printf ("Û"); */
+			/* printf ("ï¿½"); */
 			/* printf (""); */
-			/* printf ("þ"); */
+			/* printf ("ï¿½"); */
 			printf ("*");
-			/* printf ("ø"); */
+			/* printf ("ï¿½"); */
 
 		}
 		if (c=='\b' && i>0) {
@@ -1083,7 +1083,7 @@ main() {
 	printf ("Radical Softwares Limited");
 	printf ("\n\t\t\t");
 	// textcolor(6);
-	printf("     Q U I Z v.1.0");
+	printf("     Q U I Z v.2.0");
 	// textcolor(7);
 	printf("");
 	sleep(3);

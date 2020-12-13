@@ -7,7 +7,7 @@
  </ul>
 </h4>
 
-<div>
+<div style="font-family: Consolas">
 	<p>
 	No one (an individual/organization/company/educational institution) should copy or make use (i.e., copy or alter) of this source code without prior permission of the original author of the software i.e., K Chandrasekhar Omkar a.k.a Kuppa Chandrasekhara Omkara Sharma. Should anyone require access to it for any purpose, a letter has to be sent in written format to the afore mentioned author in scanned copy and obtain his permission again in written format in scanned copy. 
 	</p>

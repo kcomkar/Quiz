@@ -9,10 +9,7 @@
 
 <div style="font-family: Consolas">
 	<p>
-	No one (an individual/organization/company/educational institution) should copy or make use (i.e., copy or alter) of this source code without prior permission of the original author of the software i.e., K Chandrasekhar Omkar a.k.a Kuppa Chandrasekhara Omkara Sharma. Should anyone require access to it for any purpose, a letter has to be sent in written format to the afore mentioned author in scanned copy and obtain his permission again in written format in scanned copy. 
-	</p>
-	<p>
-	Any attempts to reverse engineer the build of the product, will be treated as a severe criminal offense, and should face the legal proceedings in the purview of the high court of Andhra Pradesh, or any other court of the K Chandrasekhar Omkar's a.k.a Kuppa Chandrasekhara Omkara Sharma's will, along with payment of 5 trillion USD for any of the afore mentioned crimes.
+	No one (an individual/organization/company/educational institution) should copy or make use (i.e., copy or alter) of this source code without prior permission of the original author of the software i.e., K Chandrasekhar Omkar. 
 	</p>
 	<p>
 		<u><b>This program can be made use only for personal use for free of charge</b></u>

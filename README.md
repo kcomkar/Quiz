@@ -14,6 +14,16 @@
 	<p>
 		<u><b>This program can be made use only for personal use for free of charge</b></u>
 	</p>
+	
+	<p>
+	To run a 64-bit version of program for Windows.
+	Open <pre>Win64\Release\Quiz.exe</pre>
+	The default login credentials are: 
+	<p>
+	 <u>Username:</u> kcomkar </br>
+	 <u>Password:</u> ASDF </br>
+	</p>
+	</p>
 	<p>
 	<u>The same is applicable irrespective of the source code being available or hosted on any other websites.</u>
 	</p>

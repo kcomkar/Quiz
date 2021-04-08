@@ -17,12 +17,12 @@
 	
 	<p>
 	To run a 64-bit version of program for Windows.
-	Open <pre>Win64\Release\Quiz.exe</pre>
+	Open "Win64\Release\Quiz.exe"
 	The default login credentials are: 
-	<table>
-	 <tr><td>Username:</td><td>kcomkar</td></tr>
-	 <tr><td>Password:</td><td>ASDF</td></tr> 
-	</table>
+	
+	Username:kcomkar
+	Password:ASDF 
+	
 	</p>
 	<p>
 	<u>The same is applicable irrespective of the source code being available or hosted on any other websites.</u>

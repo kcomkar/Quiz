@@ -15,9 +15,9 @@
 		<u><b>This program can be made use only for personal use for free of charge</b></u>
 	</p>
 	
-	<p>
-	<u>The same is applicable irrespective of the source code being available or hosted on any other websites.</u>
-	</p>
+	
+	The same is applicable irrespective of the source code being available or hosted on any other websites.
+	
 </div>
 <div>
 	To run a 64-bit version of program for Windows.

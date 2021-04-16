@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.893,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Quiz.cbproj=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
     <Transaction>1899-12-30 00:00:00.000.600,=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.415,C:\Projects\GitHub\Quiz\QuizPCH1.h=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\QuizPCH1.h</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.893,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\QuizPCH1.h=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.893,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\QuizPCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.415,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\QuizPCH1.h=C:\Projects\GitHub\Quiz\QuizPCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.893,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Quiz.cbproj</Transaction>
     <Transaction>1899-12-30 00:00:00.000.631,=C:\Projects\GitHub\Quiz\Quiz.C</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.219,C:\Projects\GitHub\Quiz\Quiz.cbproj=C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Quiz.cbproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.219,C:\Users\kcomk\Documents\Embarcadero\Studio\Projects\Quiz.cbproj=C:\Projects\GitHub\Quiz\Quiz.cbproj</Transaction>
   </Transactions>
 </BorlandProject>

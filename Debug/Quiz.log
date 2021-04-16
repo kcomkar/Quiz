@@ -1,0 +1,111 @@
+﻿  Quiz.C
+C:\Projects\GitHub\Quiz\Quiz.C(189,14): warning C4047: '=': 'int' differs in levels of indirection from 'void *'
+C:\Projects\GitHub\Quiz\Quiz.C(213,7): warning C4013: 'gets' undefined; assuming extern returning int
+C:\Projects\GitHub\Quiz\Quiz.C(191,11): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(199,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(210,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(219,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(224,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(232,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(239,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(247,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(253,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(261,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(267,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(275,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(281,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(290,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(296,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(299,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(172,11): warning C4101: 'f': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(171,7): warning C4101: 'ch': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(351,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(360,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(379,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(389,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(399,4): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(400,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(408,4): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(409,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(412,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(423,9): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(428,9): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(364,21): warning C4101: 'k': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(364,11): warning C4101: 'i': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(467,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(485,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(436,7): warning C4101: 'password': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(506,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(520,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(562,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(573,9): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(590,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(599,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(604,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(612,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(619,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(627,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(633,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(641,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(647,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(655,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(661,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(670,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(675,5): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(676,5): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(677,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(691,5): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(692,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(697,5): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(712,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(753,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(778,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(789,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(791,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(819,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(840,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(842,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(878,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Projects\GitHub\Quiz\Quiz.C(934,10): warning C4013: 'sleep' undefined; assuming extern returning int
+C:\Projects\GitHub\Quiz\Quiz.C(872,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(883,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(884,2): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(904,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(905,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(906,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(916,12): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(920,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(924,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(928,6): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(936,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(942,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(946,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(954,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(959,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(965,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(970,5): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(987,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1001,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(855,12): warning C4101: 'k': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(855,9): warning C4101: 'j': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(855,6): warning C4101: 'i': unreferenced local variable
+C:\Projects\GitHub\Quiz\Quiz.C(1029,7): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1053,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1063,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1069,3): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1082,6): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1083,6): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1084,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1097,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1121,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1138,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1145,4): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1146,4): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fcloseall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1167,3): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1168,8): warning C4996: 'getche': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getche. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1188,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1193,4): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fcloseall. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1199,4): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(1204,2): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _unlink. See online help for details.
+C:\Projects\GitHub\Quiz\Quiz.C(431): warning C4715: 'delq': not all control paths return a value
+C:\Projects\GitHub\Quiz\Quiz.C(714): warning C4715: 'modq': not all control paths return a value

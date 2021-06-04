@@ -22,10 +22,6 @@
 <div>
 	To run a 64-bit version of program for Windows.
 	Open "Win64\Release\Quiz.exe"
-	The default login credentials are: 
-	
-	Username:kcomkar
-	Password:ASDF 
-	
+	Create a user ID for yourself, and start playing quiz. 
 </div>
 

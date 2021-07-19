@@ -1,5 +1,6 @@
 # Quiz
 <h3> A console based application to build computer based tests to conduct exams </h3>
+<h2> Bug bounty program doesn't apply to any of my self-authored projects, <i> unless explicitly specified in the notification of that project </i> </h2>
 <h4 style="font: Consolas">
  <ul>
 	<li>Initially written in Turbo C </li>

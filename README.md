@@ -10,11 +10,9 @@
 
 <div style="font-family: Consolas">
 	<p>
-	No one (an individual/organization/company/educational institution) should copy or make use (i.e., copy or alter) of this source code without prior permission of the original author of the software i.e., K Chandrasekhar Omkar. 
+	No one (an individual/organization/company/educational institution) should copy or make use (i.e., copy or alter) of this source code without prior permission of the original author and is applicable irrespective of the source code being available or hosted on any other similar code hosting websites (i.e., irrespective of code maintance techniques used).
+	
 	</p>
-	
-	
-	The same is applicable irrespective of the source code being available or hosted on any other websites.
 	
 </div>
 <div>

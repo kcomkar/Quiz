@@ -1,4 +1,4 @@
-﻿/*               ====================
+/*               ====================
 CODE OF QUIZ PROGRAM
 ====================
 
@@ -74,13 +74,15 @@ and closing are done only once in the program to avoid confusion.
 
 CODE BEGINS HERE :-
 ================                                          			 */
+//#define _GNU_SOURCE // Defined by compiler
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <conio.h>
+//#include <conio.h>
 #include <stdlib.h>
-//#include <unistd.h>
-#include <process.h>
+#include <unistd.h>
+#include <termios.h>
+//#include <process.h>
 
 FILE* q, * h, * idd;
 FILE* reg, * log1;
@@ -113,61 +115,76 @@ void clrscr(void)
 	*   Use "cls" for Microsoft Windows
 	*   Use "clear" for Linux
 	***/
-	system("cls");
+	system("clear");
 }
 
 /***** getch and getche *****/
 
-//static struct termios old, new1;
+static struct termios old, new1;
 
 /* Initialize new terminal i/o settings */
-//void initTermios(int echo)
-//{
-//  tcgetattr(0, &old); //grab old terminal i/o settings
-//  new1 = old; //make new settings same as old settings
-//  new1.c_lflag &= ~ICANON; //disable buffered i/o
-//  new1.c_lflag &= echo ? ECHO : ~ECHO; //set echo mode
-//  tcsetattr(0, TCSANOW, &new1); //apply terminal io settings
-//}
+void initTermios(int echo)
+{
+  tcgetattr(0, &old); //grab old terminal i/o settings
+  new1 = old; //make new settings same as old settings
+  new1.c_lflag &= ~ICANON; //disable buffered i/o
+  new1.c_lflag &= echo ? ECHO : ~ECHO; //set echo mode
+  tcsetattr(0, TCSANOW, &new1); //apply terminal io settings
+}
 
 /* Restore old terminal i/o settings */
-//void resetTermios(void)
-//{
-//  tcsetattr(0, TCSANOW, &old);
-//}
+void resetTermios(void)
+{
+  tcsetattr(0, TCSANOW, &old);
+}
 
 /* Read 1 character - echo defines echo mode */
-//char getch_(int echo)
-//{
-//  char ch;
-//  initTermios(echo);
-//  ch = getchar();
-//  resetTermios();
-//  return ch;
-//}
+char getch_(int echo)
+{
+  char ch;
+  initTermios(echo);
+  ch = getchar();
+  resetTermios();
+  return ch;
+}
 
 /*
 Read 1 character without echo
 getch() function definition.
 */
-//char getch(void)
-//{
-//  return getch_(0);
-//}
+char getch(void)
+{
+  return getch_(0);
+}
 
 /*
 Read 1 character with echo
 getche() function definition.
 */
-//char getche(void)
-//{
-//  return getch_(1);
-//}
+char getche(void)
+{
+  return getch_(1);
+}
 
 /****************************/
 
+void safe_gets(char *str, int size) {
+    if (fgets(str, size, stdin) != NULL) {
+        size_t len = strlen(str);
+        if (len > 0 && str[len-1] == '\n') {
+            str[len-1] = '\0';
+        }
+    } else {
+        str[0] = '\0';
+    }
+}
 
-addq() {
+void flush_input(void) {
+    fflush(NULL);
+    tcflush(STDIN_FILENO, TCIFLUSH);
+}
+
+void addq() {
 	char ch, an = 'Y';
 	int id1, f, flag;
 	while (toupper(an) == 'Y') {
@@ -186,7 +203,7 @@ addq() {
 	enid:
 		flag = 0;
 		while (flag == 0) {
-			id1 = NULL;
+			id1 = 0;
 			gotoxy(31, 1);
 			flag = scanf("%d", &id1);
 		}
@@ -207,10 +224,10 @@ addq() {
 			}
 		}
 		qe.id = id1;
-		flushall();
+		flush_input();
 	enqe:
 		gotoxy(22, 2);
-		gets(qe.ques);
+		safe_gets(qe.ques, sizeof(qe.ques));
 		if (strlen(qe.ques) <= 2) {
 			gotoxy(10, 15);
 			// textcolor (-4);
@@ -221,10 +238,10 @@ addq() {
 			printf("                                        ");
 			goto enqe;
 		}
-		flushall();
+		flush_input();
 	enop1:
 		gotoxy(18, 6);
-		gets(qe.op1);
+		safe_gets(qe.op1, sizeof(qe.op1));
 		if (strlen(qe.op1) < 1) {
 			gotoxy(10, 15);
 			// textcolor (-5);
@@ -236,10 +253,10 @@ addq() {
 			printf(" ");
 			goto enop1;
 		}
-		flushall();
+		flush_input();
 	enop2:
 		gotoxy(18, 7);
-		gets(qe.op2);
+		safe_gets(qe.op2, sizeof(qe.op2));
 		if (strlen(qe.op2) < 1) {
 			gotoxy(10, 15);
 			// textcolor (-5);
@@ -250,10 +267,10 @@ addq() {
 			printf("                               ");
 			goto enop2;
 		}
-		flushall();
+		flush_input();
 	enop3:
 		gotoxy(18, 8);
-		gets(qe.op3);
+		safe_gets(qe.op3, sizeof(qe.op3));
 		if (strlen(qe.op3) < 1) {
 			gotoxy(10, 15);
 			// textcolor (-5);
@@ -264,10 +281,10 @@ addq() {
 			printf("                               ");
 			goto enop3;
 		}
-		flushall();
+		flush_input();
 	enop4:
 		gotoxy(18, 9);
-		gets(qe.op4);
+		safe_gets(qe.op4, sizeof(qe.op4));
 		if (strlen(qe.op4) < 1) {
 			gotoxy(10, 15);
 			// textcolor (-5);
@@ -278,7 +295,7 @@ addq() {
 			printf("                               ");
 			goto enop4;
 		}
-		flushall();
+		flush_input();
 
 	enans:
 		gotoxy(27, 10);
@@ -293,7 +310,7 @@ addq() {
 			printf("                                                 ");
 			goto enans;
 		}
-		flushall();
+		flush_input();
 		fwrite(&qe, sizeof(qe), 1, q);
 		printf("\n\nADD ANOTHER QUESTION (Y/N) : ");
 		an = getche();
@@ -301,7 +318,7 @@ addq() {
 }
 
 
-viewrec1(struct question* q1, int a) {
+void viewrec1(struct question* q1, int a) {
 	printf("\n");
 	// textcolor (BROWN);
 	printf("Q.ID : %d", q1->id);
@@ -322,19 +339,19 @@ viewrec1(struct question* q1, int a) {
 		// textcolor (YELLOW);
 		printf("ANSWER : %c", q1->ans);
 		// textcolor (7);
-		printf("");
+
 	}
 	// textcolor(7);
-	printf("");
+
 }
 
 
-test() {
+void test() {
 	int i = 0, j = 0;
 	clrscr();
 	rewind(q);
 	// textcolor(7);
-	printf("");
+
 	while (fread(&qe, sizeof(qe), 1, q) == 1) {
 		j++;
 	}
@@ -360,7 +377,7 @@ test() {
 	getch();
 }
 
-delq() {
+int delq() {
 	int id1, i, j = 0, k, flag = 0;
 	char an = 'Y';
 	FILE* t;
@@ -428,10 +445,11 @@ delq() {
 			an = getche();
 		}
 	}
+    return 0;
 }
 
 
-reg1() {
+void reg1() {
 	int nrec = 0, flag = 0;
 	char password[100], usrid[100];
 	rewind(reg);
@@ -446,10 +464,10 @@ reg1() {
 	printf("\nENTER DESIRED USERNAME : ");
 	printf("\nENTER PASSWORD         : ");
 	gotoxy(26, 1);
-	gets(usr.name);
+	safe_gets(usr.name, sizeof(usr.name));
 enusrid:
 	gotoxy(26, 2);
-	gets(usrid);
+	safe_gets(usrid, sizeof(usrid));
 	rewind(reg);
 	while (fread(&usr, sizeof(usr), 1, reg) == 1) {
 		flag = 0;
@@ -472,21 +490,21 @@ enusrid:
 		//clreol();
 		printf("                         ");
 		// textcolor (7);
-		printf("");
+
 		gotoxy(26, 2);
 		//clreol();    /* CLREOL() --> THIS FUNCTIONS CLEARS A LINE */
 		printf("                    ");
 		// textcolor (7);
-		printf("");
+
 		goto enusrid;
 	}
 	gotoxy(26, 3);
-	gets(usr.password);
+	safe_gets(usr.password, sizeof(usr.password));
 	strcpy(usr.id, usrid);
 	fseek(reg, 0, SEEK_END);
 	fwrite(&usr, sizeof(usr), 1, reg);
 }
-modq() {
+int modq() {
 	int id1, j = 0;
 	int flag = 0;
 	char an = 'Y', ch;
@@ -516,7 +534,7 @@ modq() {
 		gotoxy(10, 12);
 		printf("\nENTER THE RECORD ID TO BE MODIFIED : ");
 		// textcolor(7);
-		printf("");
+
 		scanf("%d", &id1);
 		rewind(q);
 		while (fread(&qe, sizeof(qe), 1, q) == 1) {
@@ -561,7 +579,7 @@ modq() {
 				printf("%c", qe.ans);
 				getch();
 				// textcolor(7);
-				printf("");
+
 				printf("\n\nPress any key to modify this record...");
 				break;
 			}
@@ -587,10 +605,10 @@ modq() {
 				printf("\nENTER THE ANSWER NUMBER : ");
 
 				t1.id = id1;
-				flushall();
+				flush_input();
 			enqe1:
 				gotoxy(22, 2);
-				gets(t1.ques);
+				safe_gets(t1.ques, sizeof(t1.ques));
 				if (strlen(t1.ques) <= 2) {
 					gotoxy(10, 15);
 					// textcolor (-4);
@@ -601,10 +619,10 @@ modq() {
 					printf("                                        ");
 					goto enqe1;
 				}
-				flushall();
+				flush_input();
 			enop11:
 				gotoxy(18, 6);
-				gets(t1.op1);
+				safe_gets(t1.op1, sizeof(t1.op1));
 				if (strlen(t1.op1) < 1) {
 					gotoxy(10, 15);
 					// textcolor (-5);
@@ -616,10 +634,10 @@ modq() {
 					printf(" ");
 					goto enop11;
 				}
-				flushall();
+				flush_input();
 			enop21:
 				gotoxy(18, 7);
-				gets(t1.op2);
+				safe_gets(t1.op2, sizeof(t1.op2));
 				if (strlen(t1.op2) < 1) {
 					gotoxy(10, 15);
 					// textcolor (-5);
@@ -630,10 +648,10 @@ modq() {
 					printf("                               ");
 					goto enop21;
 				}
-				flushall();
+				flush_input();
 			enop31:
 				gotoxy(18, 8);
-				gets(t1.op3);
+				safe_gets(t1.op3, sizeof(t1.op3));
 				if (strlen(t1.op3) < 1) {
 					gotoxy(10, 15);
 					// textcolor (-5);
@@ -644,10 +662,10 @@ modq() {
 					printf("                               ");
 					goto enop31;
 				}
-				flushall();
+				flush_input();
 			enop41:
 				gotoxy(18, 9);
-				gets(t1.op4);
+				safe_gets(t1.op4, sizeof(t1.op4));
 				if (strlen(t1.op4) < 1) {
 					gotoxy(10, 15);
 					// textcolor (-5);
@@ -658,7 +676,7 @@ modq() {
 					printf("                               ");
 					goto enop41;
 				}
-				flushall();
+				flush_input();
 
 			enans1:
 				gotoxy(27, 10);
@@ -672,7 +690,7 @@ modq() {
 					printf("                                                 ");
 					goto enans1;
 				}
-				flushall();
+				flush_input();
 				unlink("TEMP.DAT");
 				t = fopen("TEMP.DAT", "ab+");
 				t1.id = id1;
@@ -711,10 +729,11 @@ modq() {
 		printf("\n\nDo you want to modify another record (Y/N) : ");
 		an = getche();
 	}
+    return 0;
 }
 
 
-viewrec(int id1, int a) {  /* FUNCTION WHICH DISPLAYS A PARTICULAR RECORD */
+void viewrec(int id1, int a) {  /* FUNCTION WHICH DISPLAYS A PARTICULAR RECORD */
 	int found = 0;
 	idd = q;
 	rewind(idd);
@@ -744,7 +763,7 @@ viewrec(int id1, int a) {  /* FUNCTION WHICH DISPLAYS A PARTICULAR RECORD */
 				printf("\n\n");
 				printf("ANSWER : %c", qe.ans);
 				// textcolor (7);
-				printf("");
+
 			}
 		}
 	}
@@ -754,17 +773,17 @@ viewrec(int id1, int a) {  /* FUNCTION WHICH DISPLAYS A PARTICULAR RECORD */
 	}
 }
 
-viewmenu() { /*DISPLAYS VIEWMENU */
+void viewmenu() { /*DISPLAYS VIEWMENU */
 	char ch;
 	int i;
 	char an = 'Y';
 	do {
 		clrscr();
 		// textcolor (7);
-		printf("");
+
 		gotoxy(28, 10);
 		// textcolor(7);
-		printf("");
+
 		gotoxy(1, 25);
 		printf("Radical Softwares Limited");
 		gotoxy(28, 10);
@@ -797,7 +816,7 @@ viewmenu() { /*DISPLAYS VIEWMENU */
 }
 
 
-test1() {
+void test1() {
 	char ch, an = 'Y';
 	int i;
 	do {
@@ -850,7 +869,7 @@ test1() {
 
 char usrname1[100], usr1[100];
 
-conduct() {
+int conduct() {
 	char ans, temp;
 	int i, j, k, nrec = 0, qno = 0, cond = 1;
 	int score = 0, qualify;
@@ -881,7 +900,7 @@ conduct() {
 	gotoxy(1, 25);
 	printf("Radical Softwares Limited");
 	getch();
-	flushall();
+	flush_input();
 	clrscr();    /*viewrec1(struct *,0);*/
 	rewind(q);
 	while (fread(&qe, sizeof(qe), 1, q) == 1) {
@@ -902,8 +921,8 @@ conduct() {
 		// textcolor (LIGHTMAGENTA);
 		printf("ENTER YOUR ANSWER : ");
 		scanf("%c", &ans);
-		flushall();
-		flushall();
+		flush_input();
+		flush_input();
 		cond++;
 		if (cond >= 4) {
 			cond = 0;
@@ -972,7 +991,7 @@ conduct() {
 
 		}
 		// textcolor (7);
-		printf("");
+
 	}
 	clrscr();
 	if (score >= qualify) {
@@ -986,7 +1005,7 @@ conduct() {
 		printf("Hope you celebrate it.");
 		getch();
 		// textcolor(7);
-		printf("");
+
 		return 0;
 	}
 	else {
@@ -1000,7 +1019,7 @@ conduct() {
 		printf("Press any key to return to main menu...");
 		getch();
 		// textcolor (7);
-		printf("");
+
 		return 0;
 	}
 }
@@ -1008,7 +1027,7 @@ conduct() {
 
 char id1[100];
 
-login() {
+int login() {
 	char password[100], i;
 	char c;
 	int flag = 0;
@@ -1021,7 +1040,7 @@ enuid:
 	gotoxy(28, 12);
 	printf("PASSWORD     : ");
 	gotoxy(44, 11);
-	gets(usr1);
+	safe_gets(usr1, sizeof(usr1));
 	i = 0;
 	c = '\0';
 	gotoxy(44, 12);
@@ -1033,11 +1052,11 @@ enuid:
 		if (c != '\r' && c != '\b' && c != '\t' && c != '\0' && c != '\a') {
 			password[i] = c;
 			i++;
-			/* printf ("�"); */
-			/* printf (""); */
-			/* printf ("�"); */
+			/* printf (""); */
+			/* printf (" "); */
+			/* printf (""); */
 			printf("*");
-			/* printf ("�"); */
+			/* printf (""); */
 
 		}
 		if (c == '\b' && i > 0) {
@@ -1076,7 +1095,7 @@ enuid:
 	}
 }
 
-main() {
+int main() {
 	char ch, an = 'Y';
 	int check = 0, nusr;
 	q = fopen("Q.DAT", "ab+");
@@ -1090,7 +1109,7 @@ main() {
 	// textcolor(6);
 	printf("     Q U I Z v.2.0");
 	// textcolor(7);
-	printf("");
+
 	sleep(3);
 	printf("\n\n\n\t\t\tPress any key to continue...");
 	gotoxy(1, 1);
@@ -1107,7 +1126,7 @@ main() {
 		gotoxy(1, 25);
 		printf("Radical Softwares Limited");
 		// textcolor(7);
-		printf("");
+
 		gotoxy(28, 11);
 		printf("1.LOGIN");
 		gotoxy(28, 12);
@@ -1143,14 +1162,14 @@ main() {
 			fclose(h);
 			fclose(reg);
 			unlink("TEMP.DAT");
-			fcloseall();
+			fcloseall(); // _GNU_SOURCE was not defined at top, but usually okay or define it.
 			exit(0);
 		}
 	} while (check == 0);
 	do {
 		clrscr();
 		// textcolor(7);
-		printf("");
+
 		gotoxy(1, 25);
 		printf("Radical Softwares Limited");
 		gotoxy(28, 11);
@@ -1164,7 +1183,7 @@ main() {
 
 		gotoxy(28, 16);
 		printf("ENTER YOUR CHOICE : ");
-		flushall();
+		flush_input();
 		ch = getche();
 		switch (ch) {
 		case '1':
@@ -1198,11 +1217,12 @@ main() {
 			printf("INVALID CHOICE");
 			getch();
 			// textcolor(7);
-			printf("");
+
 		}
 	} while (an == 'Y');
 	unlink("TEMP.DAT");
 	fclose(q);
 	fclose(h);
 	fclose(reg);
+    return 0;
 }
